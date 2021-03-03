@@ -194,7 +194,7 @@ class Students_detail extends State<StudentDetail> {
         debugPrint("Sorry");
       } else {
         goBack();
-        showAlertDialog("Congratulation", "Student Save " + st.Stat.toString());
+        showAlertDialog("Congratulation", "Student Save ");
         // debugPrint("Congratulation");
 
       }

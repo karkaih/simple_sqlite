@@ -17,7 +17,7 @@ class StudentsState extends State<StudentList> {
   Future<List<Students>> lst;
   TextEditingController recherche = new TextEditingController();
   String test;
-  String txt = "No One with this Name";
+  String txt = "NO DATA ";
   int count = 0;
 
   List<Students> studentList;
@@ -133,7 +133,7 @@ class StudentsState extends State<StudentList> {
     int result = await helper.delete(st.id);
     if (result != 0) {
       _showSenckBarr(
-          context, " Student has been deleted   " + st.id.toString());
+          context, " Student has been deleted   ");
       // Update ListView
       updateListView();
     }
